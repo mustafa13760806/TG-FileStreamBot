@@ -26,6 +26,6 @@ func start(ctx *ext.Context, u *ext.Update) error {
 		ctx.Reply(u, "You are not allowed to use this bot.", nil)
 		return dispatcher.EndGroups
 	}
-	ctx.Reply(u, "Hi, send me any file to get a direct streamble link to that file.", nil)
+	ctx.Reply(u, "👋سلام, هر نوع فایلی رو که میخوای برای من بفرست تا من لینک دانلود مستقیم و لینک پخش آنلاین اون فایل رو بهت بدم😉.", nil)
 	return dispatcher.EndGroups
 }
