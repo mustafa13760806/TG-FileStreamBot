@@ -196,5 +196,5 @@ You can contact either via my [Telegram Group](tg://resolve?domain=tellsoir) or 
 
 ## Copyright
 
-Copyright (C) 2024 [Tellsoir](tg://resolve?domain=tellsoir2) under [GNU Affero General Public License](https://www.gnu.org/licenses/agpl-3.0.en.html).
+Copyright (C) 2024 [Tellsoir](https://tg://resolve?domain=tellsoir2) under [GNU Affero General Public License](https://www.gnu.org/licenses/agpl-3.0.en.html).
 
