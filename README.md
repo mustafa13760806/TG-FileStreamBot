@@ -189,12 +189,12 @@ This will generate a session string for your user account using QR code authenti
 
 ## Contact me
 
-[![Telegram Channel](https://img.shields.io/static/v1?label=Join&message=Telegram%20Channel&color=blueviolet&style=for-the-badge&logo=telegram&logoColor=violet)](tg://resolve?domain=tellsoir)
-[![Telegram Group](https://img.shields.io/static/v1?label=Join&message=Telegram%20Group&color=blueviolet&style=for-the-badge&logo=telegram&logoColor=violet)](tg://resolve?domain=tellsoir2)
+[![Telegram Channel](https://img.shields.io/static/v1?label=Join&message=Telegram%20Channel&color=blueviolet&style=for-the-badge&logo=telegram&logoColor=violet)](https://t.me/tellsoir)
+[![Telegram Group](https://img.shields.io/static/v1?label=Join&message=Telegram%20Group&color=blueviolet&style=for-the-badge&logo=telegram&logoColor=violet)](https://t.me/tellsoir2)
 
-You can contact either via my [Telegram Group](tg://resolve?domain=tellsoir) or you can message me on [@Tellsoir](tg://resolve?domain=tellsoir2)
+You can contact either via my [Telegram Group](https://t.me/tellsoir) or you can message me on [@Tellsoir](https://t.me/tellsoir2)
 
 ## Copyright
 
-Copyright (C) 2024 [Tellsoir](https://tg://resolve?domain=tellsoir2) under [GNU Affero General Public License](https://www.gnu.org/licenses/agpl-3.0.en.html).
+Copyright (C) 2024 [Tellsoir](https://t.me/tellsoir2) under [GNU Affero General Public License](https://www.gnu.org/licenses/agpl-3.0.en.html).
 
