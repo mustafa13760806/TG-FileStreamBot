@@ -11,70 +11,8 @@
 
 <hr>
 
-> [!NOTE]
-> Checkout [python branch](https://github.com/EverythingSuckz/TG-FileStreamBot/tree/main) if you are interested in that.
-
-<hr>
-
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#how-to-make-your-own">How to make your own</a>
-      <ul>
-        <li><a href="#deploy-to-heroku">Deploy to Heroku</a></li>
-      </ul>
-      <ul>
-        <li><a href="#download-from-releases">Download and run</a></li>
-        <li><a href="#run-using-docker-compose">Run via Docker compose</a></li>
-        <li><a href="#run-using-docker">Run via Docker</a></li>
-        <li><a href="#build-from-source">Build and run</a>
-          <ul>
-            <li><a href="#ubuntu">Ubuntu</a></li>
-            <li><a href="#windows">Windows</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="#setting-up-things">Setting up Things</a>
-      <ul>
-        <li><a href="#required-vars">Required environment variables</a></li>
-        <li><a href="#optional-vars">Optional environment variables</a></li>
-        <li><a href="#use-multiple-bots-to-speed-up">Using multiple bots</a></li>
-        <li><a href="#use-multiple-bots-to-speed-up">Using user session to auto add bots</a>
-          <ul>
-            <li><a href="#what-it-does">What it does?</a></li>
-            <li><a href="#how-to-generate-a-session-string">How to generate a session string?</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#contact-me">Contact me</a></li>
-    <li><a href="#credits">Credits</a></li>
-  </ol>
-</details>
-
-
-
-## How to make your own
-
-### Deploy to Heroku
-
-> [!NOTE]
-> You'll have to [fork](https://github.com/EverythingSuckz/TG-FileStreamBot/fork) this repository to deploy to Heroku.
-
-Press the below button to fast deploy to Heroku
-
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
-[Click Here](https://devcenter.heroku.com/articles/config-vars#using-the-heroku-dashboard) to know how to add / edit [environment variables](#required-vars) in Heroku.
-
-<hr>
-
 ### Download from releases
-- Head over to [releases](https://github.com/EverythingSuckz/TG-FileStreamBot/releases) tab, from the *pre release* section, download the one for your platform and architecture.
+- Head over to releases tab, from the *pre release* section, download the one for your platform and architecture.
 - Extract the zip file to a folder.
 - Create an a file named `fsb.env` and add all the variables there (see `fsb.sample.env` file for reference).
 - Give the executable file permission to execute using the command `chmod +x fsb` (Not required for windows).
@@ -86,7 +24,7 @@ Press the below button to fast deploy to Heroku
 
 - Clone the repository
 ```sh
-git clone https://github.com/EverythingSuckz/TG-FileStreamBot
+git clone https://github.com/#YourGithubAddress
 cd TG-FileStreamBot
 ```
 
@@ -112,7 +50,7 @@ docker compose up -d
 ### Run using docker
 
 ```sh
-docker run --env-file fsb.env ghcr.io/everythingsuckz/fsb:latest
+docker run --env-file fsb.env ghcr.io/tellso/fsb:latest
 ```
 Where `fsb.env` is the environment file containing all the variables.
 
@@ -127,7 +65,7 @@ Where `fsb.env` is the environment file containing all the variables.
 > Refer https://stackoverflow.com/a/17566846/15807350
 
 ```sh
-git clone https://github.com/EverythingSuckz/TG-FileStreamBot
+git clone https://github.com/#YourGithubAddress
 cd TG-FileStreamBot
 go build ./cmd/fsb/
 chmod +x fsb
@@ -146,7 +84,7 @@ and to stop the program,
 > Make sure to install go 1.21 or above.
 
 ```powershell
-git clone https://github.com/EverythingSuckz/TG-FileStreamBot
+git clone https://github.com/#YourGithubAddress
 cd TG-FileStreamBot
 go build ./cmd/fsb/
 Rename-Item -LiteralPath ".\fsb.sample.env" -NewName ".\fsb.env"
@@ -165,15 +103,15 @@ You may check the `fsb.sample.env`.
 An example of `fsb.env` file:
 
 ```sh
-API_ID=452525
-API_HASH=esx576f8738x883f3sfzx83
-BOT_TOKEN=55838383:yourbottokenhere
-LOG_CHANNEL=-10045145224562
+API_ID=yourapiid
+API_HASH=yourapihash
+BOT_TOKEN=#####:yourbottokenhere
+LOG_CHANNEL=-#####
 PORT=8080
 HOST=http://yourserverip
 # (if you want to set up multiple bots)
-MULTI_TOKEN1=55838373:yourworkerbottokenhere
-MULTI_TOKEN2=55838355:yourworkerbottokenhere
+MULTI_TOKEN1=#####:yourworkerbottokenhere
+MULTI_TOKEN2=#####:yourworkerbottokenhere
 ```
 
 ### Required Vars
@@ -245,35 +183,18 @@ The easiest way to generate a session string is by running
 ./fsb session --api-id <your api id> --api-hash <your api hash>
 ```
 
-<img src="https://github.com/EverythingSuckz/TG-FileStreamBot/assets/65120517/b5bd2b88-0e1f-4dbc-ad9a-faa6d5a17320" height=300>
-
 <br><br>
 
 This will generate a session string for your user account using QR code authentication. Authentication via phone number is not supported yet and will be added in the future.
 
-## Contributing
-
-Feel free to contribute to this project if you have any further ideas
-
 ## Contact me
 
-[![Telegram Channel](https://img.shields.io/static/v1?label=Join&message=Telegram%20Channel&color=blueviolet&style=for-the-badge&logo=telegram&logoColor=violet)](https://xn--r1a.click/wrench_labs)
-[![Telegram Group](https://img.shields.io/static/v1?label=Join&message=Telegram%20Group&color=blueviolet&style=for-the-badge&logo=telegram&logoColor=violet)](https://xn--r1a.click/AlteredVoid)
+[![Telegram Channel](https://img.shields.io/static/v1?label=Join&message=Telegram%20Channel&color=blueviolet&style=for-the-badge&logo=telegram&logoColor=violet)](tg://resolve?domain=tellsoir)
+[![Telegram Group](https://img.shields.io/static/v1?label=Join&message=Telegram%20Group&color=blueviolet&style=for-the-badge&logo=telegram&logoColor=violet)](tg://resolve?domain=tellsoir2)
 
-You can contact either via my [Telegram Group](https://xn--r1a.click/AlteredVoid) or you can message me on [@EverythingSuckz](https://xn--r1a.click/EverythingSuckz)
-
-
-## Credits
-
-- [@celestix](https://github.com/celestix) for [gotgproto](https://github.com/celestix/gotgproto)
-- [@divyam234](https://github.com/divyam234/teldrive) for his [Teldrive](https://github.com/divyam234/teldrive) Project
+You can contact either via my [Telegram Group](tg://resolve?domain=tellsoir) or you can message me on [@Tellsoir](tg://resolve?domain=tellsoir2)
 
 ## Copyright
 
-Copyright (C) 2023 [EverythingSuckz](https://github.com/EverythingSuckz) under [GNU Affero General Public License](https://www.gnu.org/licenses/agpl-3.0.en.html).
+Copyright (C) 2024 [Tellsoir](tg://resolve?domain=tellsoir2) under [GNU Affero General Public License](https://www.gnu.org/licenses/agpl-3.0.en.html).
 
-TG-FileStreamBot is Free Software: You can use, study share and improve it at your
-will. Specifically you can redistribute and/or modify it under the terms of the
-[GNU Affero General Public License](https://www.gnu.org/licenses/agpl-3.0.en.html) as
-published by the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version. Also keep in mind that all the forks of this repository MUST BE OPEN-SOURCE and MUST BE UNDER THE SAME LICENSE.
