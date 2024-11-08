@@ -83,8 +83,8 @@ func sendLink(ctx *ext.Context, u *ext.Update) error {
 		file.ID,
 	)
 	hash := utils.GetShortHash(fullHash)
-	link := fmt.Sprintf("%s/stream/%d?hash=%s", config.ValueOf.Host, messageID, hash)
-
+        link := fmt.Sprintf("%s/stream/%d?hash=%s", config.ValueOf.Host, messageID, hash)
+	
 	// **Changes made here:**
 	downloadURL := fmt.Sprintf("%d?hash=%s", messageID, hash) // Construct download URL with parameters
 
