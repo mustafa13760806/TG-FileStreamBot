@@ -90,7 +90,7 @@ func sendLink(ctx *ext.Context, u *ext.Update) error {
 		Buttons: []tg.KeyboardButtonClass{
 			&tg.KeyboardButtonURL{
 				Text: "📥 دانلود 📥",
-				URL:  downloadURL, // Use the constructed download URL
+				URL:  link + "&d=true",
 			},
 		},
 	}
