@@ -84,22 +84,19 @@ func sendLink(ctx *ext.Context, u *ext.Update) error {
 	)
 	hash := utils.GetShortHash(fullHash)
         link := fmt.Sprintf("%s/stream/%d?hash=%s", config.ValueOf.Host, messageID, hash)
-	
-	// **Changes made here:**
-	downloadURL := fmt.Sprintf("%s/stream/%d?hash=%s", messageID, hash) // Construct download URL with parameters
-
-	text := []styling.StyledTextOption{styling.Code(link)}
+	linkk := fmt.Sprintf("%d?hash=%s", messageID, hash)
+	text := []styling.StyledTextOption{styling.Code(linkk)}
 	row := tg.KeyboardButtonRow{
 		Buttons: []tg.KeyboardButtonClass{
 			&tg.KeyboardButtonURL{
-				Text: "Download",
+				Text: "📥 دانلود 📥",
 				URL:  downloadURL, // Use the constructed download URL
 			},
 		},
 	}
 	if strings.Contains(file.MimeType, "video") || strings.Contains(file.MimeType, "audio") || strings.Contains(file.MimeType, "pdf") {
 		row.Buttons = append(row.Buttons, &tg.KeyboardButtonURL{
-			Text: "Stream",
+			Text: "🎥 پخش آنلاین 🎥",
 			URL:  link,
 		})
 	}
