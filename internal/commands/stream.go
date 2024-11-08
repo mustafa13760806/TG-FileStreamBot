@@ -86,7 +86,7 @@ func sendLink(ctx *ext.Context, u *ext.Update) error {
         link := fmt.Sprintf("%s/stream/%d?hash=%s", config.ValueOf.Host, messageID, hash)
 	
 	// **Changes made here:**
-	downloadURL := fmt.Sprintf("%d?hash=%s", messageID, hash) // Construct download URL with parameters
+	downloadURL := fmt.Sprintf("%s/stream/%d?hash=%s", messageID, hash) // Construct download URL with parameters
 
 	text := []styling.StyledTextOption{styling.Code(link)}
 	row := tg.KeyboardButtonRow{
