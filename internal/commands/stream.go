@@ -79,7 +79,10 @@ func sendLink(ctx *ext.Context, u *ext.Update) error {
 	)
 	hash := utils.GetShortHash(fullHash)
 	link := fmt.Sprintf("%s/stream/%d?hash=%s", config.ValueOf.Host, messageID, hash)
-	text := []styling.StyledTextOption{styling.Code(link)}
+	// شخصی سازی
+	linkshort := fmt.Sprintf("%d?hash=%s", messageID, hash)
+	text := []styling.StyledTextOption{styling.Code(linkshort)}
+	// شخصی سازی
 	row := tg.KeyboardButtonRow{
 		Buttons: []tg.KeyboardButtonClass{
 			&tg.KeyboardButtonURL{
